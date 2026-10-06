@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: ecommerce
+  labels:
+    app.kubernetes.io/part-of: ecommerce
+data:
+  # Database location (Service name) and database name
+  PGHOST: "postgres"
+  PGDATABASE: "ecommerce"
+
+  # Cache
+  REDIS_URL: "redis://redis:6379"
+  CACHE_TTL_SECONDS: "60"
+
+  # How the gateway and order service find other services
+  PRODUCT_SERVICE_URL: "http://product:3001"
+  ORDER_SERVICE_URL: "http://order:3002"
+
+  # Port each service listens on inside its pod
+  GATEWAY_PORT: "3000"
+  PRODUCT_PORT: "3001"
+  ORDER_PORT: "3002"
