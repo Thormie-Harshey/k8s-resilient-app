@@ -1,0 +1,16 @@
+11:16:13
+gateway   Deployment/gateway   cpu: 2%/50%   2     5     2     50m
+11:16:30
+gateway   Deployment/gateway   cpu: 1%/50%   2     5     2     51m
+11:16:47
+gateway   Deployment/gateway   cpu: 83%/50%   2     5     2     51m
+11:17:04
+gateway   Deployment/gateway   cpu: 209%/50%   2     5     4     51m
+11:17:24
+gateway   Deployment/gateway   cpu: 114%/50%   2     5     5     52m
+11:17:50
+gateway   Deployment/gateway   cpu: 81%/50%   2     5     5     52m
+11:18:08
+gateway   Deployment/gateway   cpu: 70%/50%   2     5     5     52m
+11:18:27
+gateway   Deployment/gateway   cpu: 78%/50%   2     5     5     53m
